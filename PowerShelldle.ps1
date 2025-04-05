@@ -59,4 +59,5 @@ for ($guess = 0; $guess -ne 5; $guess++) {
     }
     Write-Host "" # Extra newline so things look right.
 }
-
+Write-Host "You did not complete this Wordle."
+Write-Host "The answer was $word."
