@@ -20,10 +20,10 @@ Write-Host "A Worlde clone built with PowerShell"
 $word = $words | Get-Random
 
 # Get user guess
-for ($guess = 0; $guess -ne 5; $guess++) { 
+for ($guess = 0; $guess -ne 6; $guess++) { 
     $valid_guess = $false
     while ($valid_guess -ne $true) { # Check if user guess is valid
-        $guess_word = Read-Host "Guess $($guess+1)/5" # Print guess out of 5
+        $guess_word = Read-Host "Guess $($guess+1)/6" # Print guess out of 6
         if ($guess_word.Length -ne 5){ # Make sure guess is 5 characters
             Write-Host "Invalid."
         }
